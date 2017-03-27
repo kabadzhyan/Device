@@ -1,12 +1,39 @@
 body {
-	font-family: "Open Sans", "Arial", sans-serif;
+	font-family: "Open Sans Light", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
-	font-weight: 300;
 	color: #464646;
 	letter-spacing: 0.001em;
 	padding: 0;
 	margin: 0;
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Gilroy ExtraBold";
+    font-style: normal;
+    src: url(../fonts/gilroyextrabold.woff) format("woff"),url(../fonts/gilroyextrabold.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: "Gilroy Light";
+    font-style: normal;
+    src: url(../fonts/gilroylight.woff) format("woff"),url(../fonts/gilroylight.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Open Sans";
+    font-style: normal;
+    src: url(../fonts/opensans.woff) format("woff"),url(../fonts/opensans.woff2) format("woff2")
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: "Open Sans Light";
+    font-style: normal;
+    src: url(../fonts/opensanslight.woff) format("woff"),url(../fonts/opensanslight.woff2) format("woff2")
 }
 
 .container {
@@ -25,13 +52,13 @@ body {
 
 .logo {
 	position: absolute;
-	top: -19px;
+	top: -15px;
     left: 56px;
 	font-family: "Gilroy ExtraBold","Arial",sans-serif;
 	font-size: 48px;
 	font-weight: 800;
 	color: #000;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -44,7 +71,7 @@ body {
 	padding-top: 41px;
 	padding-left: 60px;
 	padding: 41px 60px 10px 60px;
-	margin-bottom: 21px;
+	margin-bottom: 22px;
 }
 
 .navigation .search-form {
@@ -54,7 +81,7 @@ body {
 .navigation a {
 	text-decoration: none;
 	color: #000;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.001em;
 }
 
 .navigation .info {
@@ -151,10 +178,9 @@ body {
 }
 
 .main-menu > li {
-	font-family: "Gilroy", "Arial", sans-serif;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
 	font-size: 18px;
-	letter-spacing: 0.05em;
-	font-weight: 800;
+	letter-spacing: 0.2em;
 }
 
 .main-menu li a{
@@ -169,19 +195,19 @@ body {
 	position: absolute;
 	width: 16px;
 	height: 16px;
-	top: 5px;
-    right: -34px;
+	top: 3px;
+    right: -28px;
 	background: url(../img/plus.png) no-repeat;
 }
 
 .main-menu > li:first-child {
-	margin-right: 328px;
+	margin-right: 322px;
 }
 
 .main-menu > li:nth-child(3) {
-	margin-left: 37px;
+	margin-left: 35px;
 }
 
 .main-menu > li:last-child {
-	margin-left: 105px;
+	margin-left: 106px;
 }
