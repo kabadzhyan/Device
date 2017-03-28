@@ -241,6 +241,7 @@ body {
 
 .main-menu li:first-child:hover  .catalog {
 	display: block;
+	z-index: 10;
 }
 
 .main-menu > li:first-child {
@@ -262,6 +263,21 @@ body {
 .catalog .item-catalog {
 	position: absolute;
 	width: 585px;
+	background-color: #f7e296;
+	min-height: 139px;
+	padding-top: 22px;
+}
+
+.item-catalog:before {
+	content: "";
+    bottom: 0;
+    left: -60px;
+    z-index: -1;
+    width: 1160px;
+    height: 100%;
+    padding-top: 0;
+	position: absolute;
+    background-color: #f7e296;
 }
 
 .item-catalog li {
@@ -344,7 +360,6 @@ input[name="slider-toggle"] {
 
 .stage-description {
 	position: relative;
-	/*padding-left: 124px;*/
 	padding-top: 36px;
 	width: 506px;
 }
@@ -382,6 +397,7 @@ input[name="slider-toggle"] {
 	margin-top: 46px;
 	margin-bottom: 21px;
 	z-index: 2;
+	color: #000;
 }
 
 .stage-description p {
@@ -441,6 +457,7 @@ input[name="slider-toggle"] {
 	line-height: 36px;
 	letter-spacing: 0.001em;
 	padding-bottom: 14px;
+	color: #000;
 }
 
 .main-features span:last-of-type {
@@ -448,4 +465,39 @@ input[name="slider-toggle"] {
 	font-size: 13px;
 	line-height: 20px;
 	letter-spacing: 0.001em;
+}
+
+.production {
+	display: flex;
+	justify-content: space-between;
+	margin-top: -46px;
+}
+
+.production a {
+	display: inline-block;
+	width: 160px;
+	font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+	color: #000;
+	text-decoration: none;
+}
+
+.production .product {
+	width: 160px;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f7e296;
+	margin-bottom: 36px;
+}
+
+.production a:nth-child(2) .product {
+	align-items: flex-end;
+}
+
+.production a:hover .product {
+	background-color: #f0c52e;
 }
